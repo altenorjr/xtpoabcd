@@ -20,6 +20,10 @@ app.get("/template.html", (req, res) => {
 
 const templatePath = "/template.html";
 
+app.get("/info", (_, res) => {
+  res.json({ env: process.env });
+});
+
 app.post("/certificado", async (req, res) => {
   const certificadoText = await fetch(templatePath).then((res) => res.text());
 
