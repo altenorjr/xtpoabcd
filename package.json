@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "node-dev ."
+    "start": "node index.js",
+    "start:dev": "node-dev ."
   },
   "name": "codechallengemao2020",
   "version": "1.0.0",

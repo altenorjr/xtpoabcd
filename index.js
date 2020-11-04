@@ -40,9 +40,9 @@ app.post("/certificado", async (req, res) => {
       "content-disposition",
       `attachment; filename="certificado-${req.body.studentName}.pdf"`
     );
-    
+
     stream.pipe(res);
   });
 });
 
-app.listen(3000, () => console.log("READY"));
+app.listen(process.env.PORT, () => console.log("READY"));
