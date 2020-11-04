@@ -18,11 +18,8 @@ app.get("/template.html", (req, res) => {
   res.send(template);
 });
 
-const templatePath = "/template.html";
-
-app.get("/info", (_, res) => {
-  res.json({ env: process.env });
-});
+const templatePath =
+  "https://codechallenge-mao-2020.herokuapp.com/template.html";
 
 app.post("/certificado", async (req, res) => {
   const certificadoText = await fetch(templatePath).then((res) => res.text());
