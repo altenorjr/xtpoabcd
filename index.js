@@ -18,7 +18,7 @@ app.get("/template.html", (req, res) => {
   res.send(template);
 });
 
-const templatePath = "http://localhost:3000/template.html";
+const templatePath = "/template.html";
 
 app.post("/certificado", async (req, res) => {
   const certificadoText = await fetch(templatePath).then((res) => res.text());
