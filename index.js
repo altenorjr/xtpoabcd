@@ -6,13 +6,6 @@ const htmlPdf = require("html-pdf");
 
 const app = express();
 
-// GET
-// POST
-// PUT
-// DELETE
-// PATCH
-// OPTIONS
-
 const template = fs.readFileSync(`${__dirname}/template.html`, {
   encoding: "utf-8",
 });
